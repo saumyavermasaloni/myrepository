@@ -1,0 +1,16 @@
+
+[squid:UselessImportCheck"0Remove this unused import 'java.io.InputStream'.(¹»º8±±ÈÍ¼,
+Fsquid:S1148s"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Œã«¯»,
+psquid:S3776N"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(‚ø„Â8Œã«¯»,
+`squid:UselessImportCheck"0Remove this unused import 'java.io.IOException'.(ªº»Úıÿÿÿÿ8ÆËÍ¼,
+\"squid:SwitchLastCaseIsDefaultCheckP""Add a default case to this switch.(Ì»¹üÿÿÿÿ8¨„‘Ú¹,
+]squid:UselessImportCheck
+"-Remove this unused import 'android.util.Log'.(Ô¦Ø²øÿÿÿÿ8¾å¿Ñ¼,
+Zsquid:UselessImportCheck"/Remove this unused import 'android.os.Handler'.(ûÛ’¡8êĞÃÍ¼,
+nsquid:S1301P"KReplace this "switch" statement by "if" statements to increase readability.(Ì»¹üÿÿÿÿ8¨„‘Ú¹,
+Fsquid:S1148\"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8¨„‘Ú¹,
+osquid:CommentedOutCodeLine„"<This block of commented-out lines of code should be removed.(ÒÌâ–øÿÿÿÿ8ä»‘Ú¹,
+usquid:UselessImportCheck"JRemove this unused import 'com.example.ssaloni.navigationmvvm.Util.Utils'.(ĞæÕö8±±ÈÍ¼,
+jsquid:CommentedOutCodeLine•"<This block of commented-out lines of code should be removed.(Ó­ï8ÚüÖÚ¹,
+Lsquid:S1066h"/Merge this if statement with the enclosing one.(–ªÕ~8êĞÃÍ¼,
+wsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(˜½ıÿÿÿÿ

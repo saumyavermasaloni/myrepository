@@ -1,0 +1,31 @@
+
+]squid:UselessImportCheck"-Remove this unused import 'android.util.Log'.(Ô¦Ø²øÿÿÿÿ8Ô·¥Óº,
+esquid:UselessImportCheck "5Remove this unused import 'android.widget.ImageView'.(ú¯ëàüÿÿÿÿ8åºÕ²¹,
+osquid:UselessImportCheck"?Remove this unused import 'android.graphics.drawable.Drawable'.(Á‰º„ùÿÿÿÿ8”ãáÑº,
+[squid:UselessImportCheck0"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8ñßº¹,
+psquid:UselessImportCheck"@Remove this unused import 'android.databinding.ObservableField'.(òŠ„œşÿÿÿÿ8ªº¹â¸,
+Vsquid:S2589"7Remove this expression which always evaluates to "true"(Ù¶ˆ‚8Ê¡Ç¬º,
+[squid:UselessImportCheck"0Remove this unused import 'android.media.Image'.(ëïøÂ8£™æÒº,
+Nsquid:S1068F"1Remove this unused "imageFilePath" private field.(òËî)8¶‡åÚ¹,
+osquid:S1301§"KReplace this "switch" statement by "if" statements to increase readability.(Ì»¹üÿÿÿÿ8½×Ú¹,
+\squid:UselessImportCheck"1Remove this unused import 'android.app.Activity'.(‡ÊÍÆ8Û´æÜ¹,
+wsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(•¶ø×üÿÿÿÿ
+dsquid:UselessImportCheck"4Remove this unused import 'android.app.AlertDialog'.(ª½øşüÿÿÿÿ8’íÙ¹,
+[squid:UselessImportCheck2"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8ö“»¹,
+^squid:UselessImportCheck"4Remove this unused import 'android.graphics.Bitmap'.(¾ì8ÊÄ´¹,
+…squid:UselessImportCheck'"ZRemove this unused import 'com.example.ssaloni.navigationmvvm.view.Activity.MainActivity'.(·ìÛô8®æ¯ä¸,
+isquid:UselessImportCheck"?Remove this unused import 'android.support.annotation.NonNull'.(¼Åß8ºì’»¹,
+ksquid:UselessImportCheck";Remove this unused import 'android.graphics.BitmapFactory'.(âàºÍûÿÿÿÿ8ı˜Ö¡¶,
+]squid:UselessImportCheck"-Remove this unused import 'android.os.Build'.(ãÇ¤Úıÿÿÿÿ8’íÙ¹,
+dsquid:UselessImportCheck."9Remove this unused import 'java.nio.charset.CoderResult'.(ÕŸ—Š8í‘ï÷µ,
+lsquid:UselessImportCheck"<Remove this unused import 'android.content.DialogInterface'.(Š­›¨şÿÿÿÿ8’íÙ¹,
+Fsquid:S1185I"(Remove this method to simply inherit it.(â½®º8Âä‹¸,
+usquid:UselessImportCheck%"JRemove this unused import 'com.example.ssaloni.navigationmvvm.Util.Utils'.(ĞæÕö8Ô·¥Óº,
+}squid:UselessImportCheck$"MRemove this unused import 'com.example.ssaloni.navigationmvvm.Util.DBHelper'.(à²›Şşÿÿÿÿ8–â˜Öº,
+csquid:S1858‹"D"getMessage" returns a string, there's no need to call "toString()".(êèÄñ8äõôÙ¹,
+]"squid:SwitchLastCaseIsDefaultCheck§""Add a default case to this switch.(Ì»¹üÿÿÿÿ8½×Ú¹,
+Šsquid:UselessImportCheck)"_Remove this unused import 'com.example.ssaloni.navigationmvvm.viewModel.MainActivityViewModel'.(¸²µë8ÀµÒâ¸,
+[squid:UselessImportCheck-"0Remove this unused import 'java.io.InputStream'.(¹»º8Ô·¥Óº,
+ysquid:S1450F"\Remove the "imageFilePath" field and declare it as a local variable in the relevant methods.(òËî)8¶‡åÚ¹,
+dsquid:UselessImportCheck"4Remove this unused import 'android.database.Cursor'.(Ôäåúÿÿÿÿ8ı˜Ö¡¶,
+dsquid:UselessImportCheck"9Remove this unused import 'android.annotation.TargetApi'.(¥Îì‘8’íÙ¹,
