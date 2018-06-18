@@ -1,26 +1,30 @@
 
-Tsquid:S1905B"1Remove this unnecessary cast to "NavigationView".(üûÍøÿÿÿÿ8½â‚­»,
+‹"squid:ClassVariableVisibilityCheck2"VMake mImageView a static final constant or non-public and provide accessors if needed.(’…Ş¦8‚Ò§ö¼,
+qsquid:MaximumInheritanceDepth'"<This class has 8 parents which is greater than 5 authorized.(ä¡ø¯ÿÿÿÿÿ8½â‚­»,
+Tsquid:S1905E"1Remove this unnecessary cast to "NavigationView".(üûÍøÿÿÿÿ8½â‚­»,
+rsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ğ¾í‚
+csquid:UselessImportCheck"8Remove this unused import 'android.provider.MediaStore'.(ãçšş8Œ³»¢¶,
+ksquid:UselessImportCheck	";Remove this unused import 'android.graphics.BitmapFactory'.(âàºÍûÿÿÿÿ8Œ³»¢¶,
+psquid:UselessImportCheck"@Remove this unused import 'android.databinding.ObservableField'.(òŠ„œşÿÿÿÿ8¸İÕ‹¸,
 lsquid:UselessImportCheck"CRemove this unused import 'android.support.v4.app.FragmentManager'.(úäçÇüÿÿÿÿ
-{squid:S1450+"]Remove the "customFragment" field and declare it as a local variable in the relevant methods.(Ÿœù¸8Äûàõµ,
-Rsquid:S1905<"/Remove this unnecessary cast to "DrawerLayout".(ĞÍè¨şÿÿÿÿ8½â‚­»,
+Isquid:S1068-",Remove this unused "fragment" private field.(¬ìº@8»¿İõµ,
+^squid:UselessImportCheck".Remove this unused import 'android.view.View'.(Ø½­äşÿÿÿÿ8Óˆ´¬»,
+Msquid:S1905<"*Remove this unnecessary cast to "Toolbar".(ªü–ıÿÿÿÿ8½â‚­»,
+nsquid:UselessImportCheck"ERemove this unused import 'android.support.v7.app.AppCompatActivity'.(«Û®ûüÿÿÿÿ
+_squid:UselessImportCheck"4Remove this unused import 'android.content.Context'.(©Ê‰è8‚Ò§ö¼,
+Rsquid:S1905a"/Remove this unnecessary cast to "DrawerLayout".(ĞÍè¨şÿÿÿÿ8½â‚­»,
+{squid:S1450,"]Remove the "customFragment" field and declare it as a local variable in the relevant methods.(Ÿœù¸8Äûàõµ,
+}squid:UselessImportCheck!"MRemove this unused import 'com.example.ssaloni.navigationmvvm.Util.DBHelper'.(à²›Şşÿÿÿÿ8±å§Ôº,
+Psquid:S1068,"2Remove this unused "customFragment" private field.(Ÿœù¸8Äûàõµ,
 csquid:UselessImportCheck"3Remove this unused import 'android.os.Environment'.(É¿‹Ãûÿÿÿÿ8¡ËÍ ¶,
+\squid:UselessImportCheck",Remove this unused import 'android.net.Uri'.(òêû‘ıÿÿÿÿ8ÿà¦ä¸,
 osquid:UselessImportCheck
 "?Remove this unused import 'android.graphics.drawable.Drawable'.(Á‰º„ùÿÿÿÿ8¸İÕ‹¸,
-dsquid:UselessImportCheck"4Remove this unused import 'android.database.Cursor'.(Ôäåúÿÿÿÿ8Œ³»¢¶,
-Rsquid:S1905Y"/Remove this unnecessary cast to "DrawerLayout".(ĞÍè¨şÿÿÿÿ8½â‚­»,
 zsquid:UselessImportCheck"ORemove this unused import 'android.support.design.widget.FloatingActionButton'.(„Ÿ¹¼8­í¿öµ,
-^squid:UselessImportCheck".Remove this unused import 'android.view.View'.(Ø½­äşÿÿÿÿ8Óˆ´¬»,
-nsquid:UselessImportCheck"ERemove this unused import 'android.support.v7.app.AppCompatActivity'.(«Û®ûüÿÿÿÿ
-Isquid:S1068,",Remove this unused "fragment" private field.(¬ìº@8»¿İõµ,
-msquid:UselessImportCheck"CRemove this unused import 'android.support.design.widget.Snackbar'.( À®p8­í¿öµ,
-\squid:UselessImportCheck",Remove this unused import 'android.net.Uri'.(òêû‘ıÿÿÿÿ8ÿà¦ä¸,
-Msquid:S19059"*Remove this unnecessary cast to "Toolbar".(ªü–ıÿÿÿÿ8½â‚­»,
-^squid:UselessImportCheck"4Remove this unused import 'android.graphics.Bitmap'.(¾ì8Œ³»¢¶,
+’"squid:ClassVariableVisibilityCheck0"XMake mImageBitmap a static final constant or non-public and provide accessors if needed.(£¦Ò¥şÿÿÿÿ8‚Ò§ö¼,
+dsquid:UselessImportCheck"4Remove this unused import 'android.database.Cursor'.(Ôäåúÿÿÿÿ8Œ³»¢¶,
+—"squid:ClassVariableVisibilityCheck1"]Make mCurrentPhotoPath a static final constant or non-public and provide accessors if needed.(—‘ƒÑıÿÿÿÿ8‚Ò§ö¼,
+Rsquid:S1905?"/Remove this unnecessary cast to "DrawerLayout".(ĞÍè¨şÿÿÿÿ8½â‚­»,
+¤squid:S1186Q"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(–Ëµîşÿÿÿÿ8‚Ò§ö¼,
 isquid:UselessImportCheck"?Remove this unused import 'android.support.annotation.NonNull'.(¼Åß8æ²Ÿóµ,
-csquid:UselessImportCheck"8Remove this unused import 'android.provider.MediaStore'.(ãçšş8Œ³»¢¶,
-qsquid:MaximumInheritanceDepth&"<This class has 8 parents which is greater than 5 authorized.(ä¡ø¯ÿÿÿÿÿ8½â‚­»,
-Psquid:S1068+"2Remove this unused "customFragment" private field.(Ÿœù¸8Äûàõµ,
-rsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ğ¾í‚
-}squid:UselessImportCheck "MRemove this unused import 'com.example.ssaloni.navigationmvvm.Util.DBHelper'.(à²›Şşÿÿÿÿ8±å§Ôº,
-psquid:UselessImportCheck"@Remove this unused import 'android.databinding.ObservableField'.(òŠ„œşÿÿÿÿ8¸İÕ‹¸,
-ksquid:UselessImportCheck	";Remove this unused import 'android.graphics.BitmapFactory'.(âàºÍûÿÿÿÿ8Œ³»¢¶,
+msquid:UselessImportCheck"CRemove this unused import 'android.support.design.widget.Snackbar'.( À®p8­í¿öµ,

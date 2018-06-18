@@ -6,19 +6,39 @@
             name="viewModel"
             type="com.example.ssaloni.navigationmvvm.viewModel.GridViewModel"/>
     </data>
+
     <LinearLayout
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteY="81dp">
+        android:layout_height="wrap_content">
 
         <android.support.v7.widget.RecyclerView
             android:id="@+id/allimages"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            tools:layout_editor_absoluteX="8dp"
-            tools:layout_editor_absoluteY="8dp" />
+            android:numColumns="3"
+            android:horizontalSpacing="10dp"
+            android:verticalSpacing="10dp" />
     </LinearLayout>
+       <!-- <android.support.v7.widget.RecyclerView
+            android:id="@+id/allimages"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />-->
+       <!-- <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <GridView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/gridview"
+                android:numColumns="3"
+                android:horizontalSpacing="10dp"
+                android:verticalSpacing="10dp">
+
+            </GridView>
+        </GridLayout>-->
+
 
 </layout>

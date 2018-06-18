@@ -10,31 +10,36 @@ public class Contact
     String image_url;
 
     // Empty constructor
-    public Contact() {
+    public Contact()
+    {
 
     }
 
     // constructor
-    public Contact(int keyId, String image_url) {
+    public Contact(int keyId, String image_url)
+    {
         this.id = keyId;
         this.image_url = image_url;
 
     }
 
-    public int getId() {
+    public int getId()
+    {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(int id)
+    {
         this.id = id;
     }
 
-    public String getImage_url() {
+    public String getImage_url()
+    {
         return image_url;
     }
 
-    public void setImage_url(String image_url) {
+    public void setImage_url(String image_url)
+    {
         this.image_url = image_url;
     }
-
 }

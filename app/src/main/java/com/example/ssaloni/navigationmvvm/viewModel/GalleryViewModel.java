@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.databinding.ObservableField;
 import android.graphics.Bitmap;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Handler;
 import android.provider.MediaStore;
 import android.util.Log;
@@ -12,7 +13,6 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.example.ssaloni.navigationmvvm.Util.DBHelper;
-import com.example.ssaloni.navigationmvvm.Util.Utils;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
@@ -56,7 +56,8 @@ public class GalleryViewModel extends BaseViewModel
 
     public View.OnClickListener onOpenCamera()
     {
-        return new View.OnClickListener() {
+        return new View.OnClickListener()
+        {
             @Override
             public void onClick(View view)
             {
@@ -67,7 +68,8 @@ public class GalleryViewModel extends BaseViewModel
 
     public View.OnClickListener onOpenGallery()
     {
-        return new View.OnClickListener() {
+        return new View.OnClickListener()
+        {
             @Override
             public void onClick(View view)
             {
@@ -81,44 +83,47 @@ public class GalleryViewModel extends BaseViewModel
         switch (requestCode){
             case CAMERA_REQUEST:
                 try{
-                    if(resultCode==RESULT_OK){
-                        imageData.set(Uri.parse(imageFilePath));
-                    }
-                }
+                    if(resultCode==RESULT_OK) {
+                        // Saving to Database...
+                        Uri cameraUri = Uri.parse(imageFilePath);
+                        if(saveImageInDB(cameraUri)) {
+
+                        imageData.set(cameraUri);
+                        Log.i("info", String.valueOf(cameraUri));}}}
                 catch (Exception e) {
-                    e.printStackTrace();
-                }
+                    e.printStackTrace();}
                 break;
+
+
             case SELECT_PICTURE:
-                try{
-                    if(resultCode == RESULT_OK){
+                try
+                {
+                    if(resultCode == RESULT_OK)
+                    {
                         Uri selectedImageUri = data.getData();
-                        if (null != selectedImageUri)
-                        {
                             // Saving to Database...
                             if (saveImageInDB(selectedImageUri))
                             {
                                 imageData.set(selectedImageUri);
+                               // Log.i("info", String.valueOf(selectedImageUri));
                             }
-                        }
                     }
                 }
-                catch (Exception e) {
+                catch (Exception e)
+                {
                     e.printStackTrace();
                 }
                 break;
         }
-
     }
 
-    // Save the
-    Boolean saveImageInDB(Uri selectedImageUri) {
 
+    Boolean saveImageInDB(Uri selectedImage) {
         dbHelper.open();
-        dbHelper.insertImageUrl(String.valueOf(selectedImageUri));
+        dbHelper.insertImageUrl(String.valueOf(selectedImage));
+        //Log.i("info", String.valueOf(selectedImage));
         dbHelper.close();
         return true;
-
     }
 
     public interface DataListener

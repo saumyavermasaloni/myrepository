@@ -37,10 +37,8 @@ import com.example.ssaloni.navigationmvvm.viewModel.MainActivityViewModel;
 
 
 public class MainActivity extends BaseActivity implements MainActivityViewModel.DataListener,
-        NavigationView.OnNavigationItemSelectedListener
+        NavigationView.OnNavigationItemSelectedListener {
 
-
-{
     MainActivityViewModel viewModel;
     ActivityMainBinding binding;
     private Fragment customFragment;
@@ -58,7 +56,6 @@ public class MainActivity extends BaseActivity implements MainActivityViewModel.
         binding= DataBindingUtil.setContentView(this,R.layout.activity_main);
         viewModel=new MainActivityViewModel(this,this);
         binding.setViewModel(viewModel);
-
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -78,7 +75,6 @@ public class MainActivity extends BaseActivity implements MainActivityViewModel.
     {
         binding.drawerLayout.closeDrawers();
         return viewModel.onNavigationItemSelected(menuItem, getSupportFragmentManager().beginTransaction());
-
     }
 
     @Override

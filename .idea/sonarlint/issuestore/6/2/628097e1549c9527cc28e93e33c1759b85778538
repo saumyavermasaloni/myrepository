@@ -1,6 +1,6 @@
 
-]squid:UselessImportCheck"3Remove this unused import 'android.content.Intent'.(³ğ‹G8â”÷¬º,
 wsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(˜½ıÿÿÿÿ
+dsquid:UselessImportCheck	"4Remove this unused import 'android.widget.GridView'.(éĞÏ«ÿÿÿÿÿ8µ‰©ö¼,
 asquid:UselessImportCheck"8Remove this unused import 'android.app.FragmentManager'.(í£“ûÿÿÿÿ
-Xsquid:S1068"5Remove this unused "mPreviousMenuItem" private field.(ïÒÉÕıÿÿÿÿ8±ñ¬º,
-]squid:S1172":Remove this unused method parameter "fragmentTransaction".(Ç‰©ıÿÿÿÿ8œŒ»¬»,
+Xsquid:S1172":Remove this unused method parameter "fragmentTransaction".(§¹¿á8µ‰©ö¼,
+gsquid:UselessImportCheck"<Remove this unused import 'android.app.FragmentTransaction'.(Àº«‡8µ‰©ö¼,

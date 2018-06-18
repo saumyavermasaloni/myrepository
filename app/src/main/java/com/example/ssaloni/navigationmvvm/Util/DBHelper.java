@@ -33,10 +33,9 @@ public class DBHelper
     private static final String IMAGES_TABLE = "ImagesTable";
 
     private static final String CREATE_IMAGES_TABLE =
-            "CREATE TABLE " + IMAGES_TABLE + " IF NOT EXISTS(" +
+            "CREATE TABLE " + IMAGES_TABLE + "(" +
                     IMAGE_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, "
                     + IMAGE_URL + " VARCHAR NOT NULL );";
-
 
     private static class DatabaseHelper extends SQLiteOpenHelper
     {
@@ -52,7 +51,7 @@ public class DBHelper
 
         public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion)
         {
-            //db.execSQL("DROP TABLE IF EXISTS " + CREATE_IMAGES_TABLE);
+            db.execSQL("DROP TABLE IF EXISTS " + CREATE_IMAGES_TABLE);
             onCreate(db);
         }
     }
@@ -79,6 +78,13 @@ public class DBHelper
         mDbHelper.close();
     }
 
+    /*// Insert the image to the Sqlite DB
+    public void insertImage(byte[] imageBytes)
+    {
+        ContentValues cv = new ContentValues();
+        cv.put(IMAGE, imageBytes);
+        mDb.insert(IMAGES_TABLE, null, cv);
+    }*/
 
     public void insertImageUrl(String img_url)
     {

@@ -32,8 +32,6 @@ Wapp/src/main/java/com/example/ssaloni/navigationmvvm/view/Fragment/GallaryFragm
 „
 Tapp/src/main/java/com/example/ssaloni/navigationmvvm/viewModel/GalleryViewModel.java,3\b\3b6cde4f4579a45ba72da462d12db33ac21304b0
 @
-local.properties,0\7\0712df971a99ac4d2fccb8e0fb19f377f3374cca
-@
 app/build.gradle,f\4\f4a01d6a4fcb971362ec00a83903fd3902f52164
 ˆ
 Xapp/src/androidTest/java/com/example/ssaloni/navigationmvvm/ExampleInstrumentedTest.java,f\4\f418dff423175508c62612f384c33dea844f0d3c
@@ -63,8 +61,6 @@ V
 &app/src/main/res/layout/image_item.xml,3\2\32ae1de01d53e17f40c8327670987381f08154ca
 w
 Gapp/src/main/java/com/example/ssaloni/navigationmvvm/Util/DBHelper.java,a\5\a57c89e04d737bbecfc9d1fbc3ba77e1d584ffc5
-ˆ
-Xapp/src/main/java/com/example/ssaloni/navigationmvvm/Util/GridSpacingItemDecoration.java,5\2\52f4100e6f35e82f0b143a8f8f32c9cb1d805d1f
 ~
 Napp/src/main/java/com/example/ssaloni/navigationmvvm/Adapter/ImageAdapter.java,1\8\18012097a1f238e694c2754f39f77cf97997ecc7
 v
@@ -73,3 +69,7 @@ t
 Dapp/src/main/java/com/example/ssaloni/navigationmvvm/Util/Utils.java,3\c\3c56249db3d448d2712d0c55051629d3631209ab
 ˆ
 Xapp/src/main/java/com/example/ssaloni/navigationmvvm/view/Fragment/GridViewFragment.java,f\8\f888eb24aa71a27a03edb0a77588b00ca0053e13
+S
+#app/src/main/res/values/strings.xml,d\2\d2281fbb3027de2722081a53408dd77628bf080e
+‡
+Wapp/src/main/java/com/example/ssaloni/navigationmvvm/Helper/ItemTouchHelperAdapter.java,9\8\9863c32e0960bd056fe6e5886b7bc945b5558852

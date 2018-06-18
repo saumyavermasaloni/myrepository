@@ -34,7 +34,6 @@ import android.widget.Toast;
 
 import com.example.ssaloni.navigationmvvm.R;
 import com.example.ssaloni.navigationmvvm.Util.DBHelper;
-import com.example.ssaloni.navigationmvvm.Util.Utils;
 import com.example.ssaloni.navigationmvvm.databinding.FragmentGallaryBinding;
 import com.example.ssaloni.navigationmvvm.view.Activity.MainActivity;
 import com.example.ssaloni.navigationmvvm.viewModel.GalleryViewModel;
@@ -183,7 +182,5 @@ public class GallaryFragment extends BaseFragment implements GalleryViewModel.Da
                 viewModel.onResultReceived(requestCode, resultCode, data,photoFile.getAbsolutePath());
                 break;
         }
-
     }
-
 }
