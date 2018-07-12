@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <data>
         <variable
@@ -7,9 +8,12 @@
             type="com.example.ssaloni.navigationmvvm.viewModel.GridViewModel"/>
     </data>
 
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
     <LinearLayout
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -20,7 +24,10 @@
             android:numColumns="3"
             android:horizontalSpacing="10dp"
             android:verticalSpacing="10dp" />
+
     </LinearLayout>
+
+    </FrameLayout>
        <!-- <android.support.v7.widget.RecyclerView
             android:id="@+id/allimages"
             android:layout_width="wrap_content"

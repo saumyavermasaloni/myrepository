@@ -1,7 +1,7 @@
 
-nsquid:CommentedOutCodeLineS"<This block of commented-out lines of code should be removed.(ÒÌâ–øÿÿÿÿ8ÍÎö¼,
-usquid:S00117Y"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(†Õ®Õúÿÿÿÿ8¶»÷Ñ¼,
 ~squid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(åêæÿýÿÿÿÿ8ˆõÚÑ¼,
 \squid:UselessImportCheck	",Remove this unused import 'android.net.Uri'.(òêû‘ýÿÿÿÿ8×¬ÙÑ¼,
-msquid:S00100;"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¤–¢8×¬ÙÑ¼,
 wsquid:S2293b"YReplace the type specification in this constructor call with the diamond operator ("<>").(È»¹Ý8×¬ÙÑ¼,
+nsquid:CommentedOutCodeLineS"<This block of commented-out lines of code should be removed.(ÒÌâ–øÿÿÿÿ8ÍÎö¼,
+msquid:S00100;"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¤–¢8×¬ÙÑ¼,
+usquid:S00117Y"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(†Õ®Õúÿÿÿÿ8¶»÷Ñ¼,

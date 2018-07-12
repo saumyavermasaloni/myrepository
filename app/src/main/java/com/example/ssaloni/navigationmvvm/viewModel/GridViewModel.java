@@ -43,6 +43,24 @@ public class GridViewModel extends BaseViewModel
 {
     private ObservableField<ImageView> onZoom = new ObservableField<ImageView>();
 
+    private ObservableField<CustomerListAdapter> ImageObservableField = new ObservableField<>();
+
+    private ObservableField<RecyclerView.LayoutManager> layoutManager = new ObservableField<>();
+
+    public ObservableField<RecyclerView.LayoutManager> getLayoutManager()
+    {
+        return layoutManager;
+    }
+
+    public void setLayoutManager(ObservableField<RecyclerView.LayoutManager> layoutManager)
+    {
+        this.layoutManager = layoutManager;
+    }
+
+    public ObservableField<CustomerListAdapter> getImageObservableField() {
+        return ImageObservableField;
+    }
+
     ImageAdapter imageAdapter;
     private final List<Contact> messagesList = new ArrayList<>();
     DataListener dataListener;
@@ -60,7 +78,7 @@ public class GridViewModel extends BaseViewModel
     public GridViewModel(Context context,DataListener dataListener)
     {
         super(context);
-        final CustomerListAdapter adapter = new CustomerListAdapter(context,messagesList,dragStartListener);
+        CustomerListAdapter adapter = new CustomerListAdapter(messagesList,dragStartListener,context);
 
         RecyclerView recyclerView=dataListener.getRecyclerView();
         recyclerView.setHasFixedSize(true);
@@ -75,171 +93,11 @@ public class GridViewModel extends BaseViewModel
         mItemTouchHelper = new ItemTouchHelper(callback);
         mItemTouchHelper.attachToRecyclerView(recyclerView);
         dbHelper = new DBHelper(context);
+
+        adapter.notifyDataSetChanged();
+
         loadAllImages();
-
-
-      /* imageRecycler = dataListener.getRecyclerView();
-        imageRecycler.setHasFixedSize(true);
-        mLayoutManager = new LinearLayoutManager(context);
-        imageRecycler.setLayoutManager(mLayoutManager);
-        //mCustomers = SampleData.addSampleCustomers();
-
-        //setup the adapter with empty list
-        mAdapter = new CustomerListAdapter(context, messagesList, dragStartListener);
-        gridLayoutManager = new GridLayoutManager(context,3);
-        ItemTouchHelper.Callback callback = new SimpleItemTouchHelperCallback(mAdapter);
-        mItemTouchHelper = new ItemTouchHelper(callback);
-        mItemTouchHelper.attachToRecyclerView(imageRecycler);
-        int spanCount = 3; //  columns
-        int spacing = 1; // 50px
-        boolean includeEdge = true;
-        imageRecycler.addItemDecoration(new GridSpacingItemDecoration(spanCount, spacing, includeEdge));
-        imageRecycler.setAdapter(mAdapter);
-        dbHelper = new DBHelper(context);
-        loadAllImages();*/
-
-        /*super(context);
-        this.dataListener= dataListener;
-        imageRecycler=dataListener.getRecyclerView();
-        imageAdapter = new ImageAdapter(messagesList,context);
-        gridLayoutManager = new GridLayoutManager(context,3);
-        imageRecycler.setHasFixedSize(true);
-        imageRecycler.setLayoutManager(gridLayoutManager);
-        int spanCount = 3; //  columns
-        int spacing = 1; // 50px
-        boolean includeEdge = true;
-        imageRecycler.addItemDecoration(new GridSpacingItemDecoration(spanCount, spacing, includeEdge));
-        imageRecycler.setAdapter(imageAdapter);
-        dbHelper = new DBHelper(context);
-        loadAllImages();*/
-
-       /* super(context);
-        this.dataListener= dataListener;
-        gridView = dataListener.getGridView();
-        imageAdapter=new ImageAdapter(context,messagesList);
-        gridView.setAdapter(imageAdapter);
-        dbHelper = new DBHelper(context);
-        loadAllImages();*/
     }
-
-
-  /*  private void zoomImageFromThumb(final ObservableField<View> thumbView,int imageResId)
-    {
-        if (mCurrentAnimatorEffect != null)
-        {
-            mCurrentAnimatorEffect.cancel();
-        }
-        final ImageView expandedImageView = dataListener.getImageView();
-        expandedImageView.setImageResource(imageResId);
-
-        final Rect startBounds = new Rect();
-        final Rect finalBounds = new Rect();
-        final Point globalOffset = new Point();
-
-    *//*    thumbView.getGlobalVisibleRect(startBounds);
-        findViewById(R.id.container).getGlobalVisibleRect(finalBounds, globalOffset);*//*
-
-        startBounds.offset(-globalOffset.x, -globalOffset.y);
-        finalBounds.offset(-globalOffset.x, -globalOffset.y);
-
-        float startScale;
-        if ((float) finalBounds.width() / finalBounds.height()
-                > (float) startBounds.width() / startBounds.height())
-        {
-            // Extend start bounds horizontally
-            startScale = (float) startBounds.height() / finalBounds.height();
-            float startWidth = startScale * finalBounds.width();
-            float deltaWidth = (startWidth - startBounds.width()) / 2;
-            startBounds.left -= deltaWidth;
-            startBounds.right += deltaWidth;
-        }
-        else
-        {
-            // Extend start bounds vertically
-            startScale = (float) startBounds.width() / finalBounds.width();
-            float startHeight = startScale * finalBounds.height();
-            float deltaHeight = (startHeight - startBounds.height()) / 2;
-            startBounds.top -= deltaHeight;
-            startBounds.bottom += deltaHeight;
-        }
-
-        //thumbView.setAlpha(0f);
-        expandedImageView.setVisibility(View.VISIBLE);
-
-        expandedImageView.setPivotX(0f);
-        expandedImageView.setPivotY(0f);
-
-        // scale properties (X, Y, SCALE_X, and SCALE_Y).
-        AnimatorSet set = new AnimatorSet();
-        set
-                .play(ObjectAnimator.ofFloat(expandedImageView, View.X,
-                        startBounds.left, finalBounds.left))
-                .with(ObjectAnimator.ofFloat(expandedImageView, View.Y,
-                        startBounds.top, finalBounds.top))
-                .with(ObjectAnimator.ofFloat(expandedImageView, View.SCALE_X,
-                        startScale, 1f)).with(ObjectAnimator.ofFloat(expandedImageView,
-                View.SCALE_Y, startScale, 1f));
-        set.setDuration(mShortAnimationDurationEffect);
-        set.setInterpolator(new DecelerateInterpolator());
-        set.addListener(new AnimatorListenerAdapter() {
-            @Override
-            public void onAnimationEnd(Animator animation) {
-                mCurrentAnimatorEffect = null;
-            }
-
-            @Override
-            public void onAnimationCancel(Animator animation) {
-                mCurrentAnimatorEffect = null;
-            }
-        });
-        set.start();
-        mCurrentAnimatorEffect = set;
-
-        final float startScaleFinal = startScale;
-        expandedImageView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (mCurrentAnimatorEffect != null) {
-                    mCurrentAnimatorEffect.cancel();
-                }
-
-                // back to their original values.
-                AnimatorSet set = new AnimatorSet();
-                set.play(ObjectAnimator
-                        .ofFloat(expandedImageView, View.X, startBounds.left))
-                        .with(ObjectAnimator
-                                .ofFloat(expandedImageView,
-                                        View.Y,startBounds.top))
-                        .with(ObjectAnimator
-                                .ofFloat(expandedImageView,
-                                        View.SCALE_X, startScaleFinal))
-                        .with(ObjectAnimator
-                                .ofFloat(expandedImageView,
-                                        View.SCALE_Y, startScaleFinal));
-                set.setDuration(mShortAnimationDurationEffect);
-                set.setInterpolator(new DecelerateInterpolator());
-                set.addListener(new AnimatorListenerAdapter() {
-                    @Override
-                    public void onAnimationEnd(Animator animation)
-                    {
-                        //thumbView.setAlpha(1f);
-                        expandedImageView.setVisibility(View.GONE);
-                        mCurrentAnimatorEffect = null;
-                    }
-
-                    @Override
-                    public void onAnimationCancel(Animator animation)
-                    {
-                        //thumbView.setAlpha(1f);
-                        expandedImageView.setVisibility(View.GONE);
-                        mCurrentAnimatorEffect = null;
-                    }
-                });
-                set.start();
-                mCurrentAnimatorEffect = set;
-            }
-        });
-    }*/
 
     public void loadAllImages()
     {
@@ -264,25 +122,9 @@ public class GridViewModel extends BaseViewModel
         mItemTouchHelper.startDrag(viewHolder);
     }
 
-    public ObservableField<ImageView> getOnZoom() {
-        return onZoom;
-    }
-
-    public void setOnZoom(ObservableField<ImageView> onZoom) {
-        this.onZoom = onZoom;
-    }
-
-    public void zoomImageFromThumb()
-    {
-        //final ImageView expandedImageView =dataListener.getExpandedView();
-        //expandedImageView.setImageResource(imageView1);
-    }
-
-
     public interface DataListener
     {
         //GridView getGridView();
         RecyclerView getRecyclerView();
-        ImageView getExpandedView();
     }
 }

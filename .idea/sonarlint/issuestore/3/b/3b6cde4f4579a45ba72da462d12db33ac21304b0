@@ -1,18 +1,18 @@
 
-dsquid:UselessImportCheck":Remove this unused import 'java.io.ByteArrayOutputStream'.(Î‡È8ñú¨ö¼,
-Zsquid:UselessImportCheck	"/Remove this unused import 'android.os.Handler'.(ûÛ’¡8êĞÃÍ¼,
-`squid:UselessImportCheck"0Remove this unused import 'java.io.IOException'.(ªº»Úıÿÿÿÿ8ÆËÍ¼,
+Asquid:S1148^"#Use a logger to log this exception.(öÁ¯¶8Œã«¯»,
+nsquid:S1301S"KReplace this "switch" statement by "if" statements to increase readability.(×ö³–úÿÿÿÿ8ñú¨ö¼,
+nsquid:CommentedOutCodeLine|"<This block of commented-out lines of code should be removed.(‚áääøÿÿÿÿ8ÛÅŞô½,
 csquid:UselessImportCheck
 "8Remove this unused import 'android.provider.MediaStore'.(ãçšş8ñú¨ö¼,
-Asquid:S1148^"#Use a logger to log this exception.(öÁ¯¶8Œã«¯»,
+`squid:UselessImportCheck"0Remove this unused import 'java.io.IOException'.(ªº»Úıÿÿÿÿ8ÆËÍ¼,
 ^squid:UselessImportCheck"4Remove this unused import 'android.graphics.Bitmap'.(¾ì8ñú¨ö¼,
-[squid:UselessImportCheck"0Remove this unused import 'java.io.InputStream'.(¹»º8±±ÈÍ¼,
 Fsquid:S1148r"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8­ºİó½,
+asquid:UselessImportCheck"1Remove this unused import 'android.widget.Toast'.(©›ïÍúÿÿÿÿ8ñú¨ö¼,
+|squid:S2293%"YReplace the type specification in this constructor call with the diamond operator ("<>").(íõ§‹ùÿÿÿÿ8ñú¨ö¼,
+Zsquid:UselessImportCheck	"/Remove this unused import 'android.os.Handler'.(ûÛ’¡8êĞÃÍ¼,
+]squid:UselessImportCheck"-Remove this unused import 'android.os.Build'.(ãÇ¤Úıÿÿÿÿ8Õ¹Êö½,
+dsquid:UselessImportCheck":Remove this unused import 'java.io.ByteArrayOutputStream'.(Î‡È8ñú¨ö¼,
 \"squid:SwitchLastCaseIsDefaultCheckS""Add a default case to this switch.(×ö³–úÿÿÿÿ8ñú¨ö¼,
 nsquid:CommentedOutCodeLinel"<This block of commented-out lines of code should be removed.(õÒ­Åûÿÿÿÿ8ÛÅŞô½,
-asquid:UselessImportCheck"1Remove this unused import 'android.widget.Toast'.(©›ïÍúÿÿÿÿ8ñú¨ö¼,
-]squid:UselessImportCheck"-Remove this unused import 'android.os.Build'.(ãÇ¤Úıÿÿÿÿ8Õ¹Êö½,
-nsquid:S1301S"KReplace this "switch" statement by "if" statements to increase readability.(×ö³–úÿÿÿÿ8ñú¨ö¼,
+[squid:UselessImportCheck"0Remove this unused import 'java.io.InputStream'.(¹»º8±±ÈÍ¼,
 wsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(˜½ıÿÿÿÿ
-nsquid:CommentedOutCodeLine|"<This block of commented-out lines of code should be removed.(‚áääøÿÿÿÿ8ÛÅŞô½,
-|squid:S2293%"YReplace the type specification in this constructor call with the diamond operator ("<>").(íõ§‹ùÿÿÿÿ8ñú¨ö¼,

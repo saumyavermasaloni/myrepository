@@ -36,7 +36,6 @@ public class GalleryViewModel extends BaseViewModel
 
     private ObservableField<Uri> imageData = new ObservableField<Uri>();
 
-
     public GalleryViewModel(Context context, DataListener dataListener, Uri picture)
     {
         super(context);

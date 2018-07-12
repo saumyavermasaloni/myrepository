@@ -3,14 +3,14 @@
     <data>
         <variable
             name="viewModel"
-            type="com.example.ssaloni.navigationmvvm.viewModel.GridViewModel"/>
+            type="com.example.ssaloni.navigationmvvm.viewModel.RecyclerViewAdapterViewModel"/>
     </data>
 
     <FrameLayout
         android:id="@+id/container"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="4dp">
+        android:layout_margin="0.5dp">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -22,16 +22,18 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:adjustViewBounds="true"
+            android:padding="6dp"
             android:scaleType="fitXY"/>
     </LinearLayout>
 
-    <ImageView
-        android:id="@+id/expandedimage"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:visibility="invisible"
-        android:adjustViewBounds="true"
-        android:scaleType="fitXY"/>
+        <ImageView
+            android:id="@+id/expandedimage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"/>
+
     </FrameLayout>
 
 </layout>

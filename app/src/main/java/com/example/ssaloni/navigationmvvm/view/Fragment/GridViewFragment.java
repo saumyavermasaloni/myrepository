@@ -21,17 +21,13 @@ import android.widget.ImageView;
 import com.example.ssaloni.navigationmvvm.Helper.OnStartDragListener;
 import com.example.ssaloni.navigationmvvm.R;
 import com.example.ssaloni.navigationmvvm.databinding.AllImagesBinding;
-import com.example.ssaloni.navigationmvvm.databinding.ImageItemBinding;
 import com.example.ssaloni.navigationmvvm.viewModel.GridViewModel;
 
 
 public class GridViewFragment extends BaseFragment implements GridViewModel.DataListener,OnStartDragListener
 {
     GridViewModel gridViewModel;
-    AllImagesBinding  allImagesBinding;
-    GridView gridview;
-    ImageItemBinding imageItemBinding;
-
+    AllImagesBinding allImagesBinding;
 
     @Override
     public void onCreate(Bundle savedInstanceState)
@@ -71,13 +67,6 @@ public class GridViewFragment extends BaseFragment implements GridViewModel.Data
     {
         return allImagesBinding.allimages;
     }
-
-    @Override
-    public ImageView getExpandedView()
-    {
-        return imageItemBinding.expandedimage ;
-    }
-
 
     @Override
     public void onStartDrag(RecyclerView.ViewHolder viewHolder)
